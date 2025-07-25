@@ -1,0 +1,32 @@
+.order-carousel {
+  max-width: 500px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.step-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 1rem;
+}
+
+.step-slide img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.step-title {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: #1f2b20;
+}

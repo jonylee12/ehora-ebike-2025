@@ -1,0 +1,33 @@
+.products-page-grid {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.filters {
+  width: 250px;
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.filter-group {
+  margin-bottom: 1.2rem;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.products-list {
+  flex: 1;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}

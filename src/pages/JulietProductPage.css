@@ -1,0 +1,169 @@
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 3rem;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnails {
+  display: flex;
+  margin-top: 1rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnails img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.thumbnails img.active-thumb {
+  border-color: #ff6b00;
+  transform: scale(1.05);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.details h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.5rem;
+}
+
+.new-price {
+  color: #ff6b00;
+  font-weight: bold;
+}
+
+.old {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 0.5rem;
+}
+
+.in-stock {
+  color: green;
+  font-weight: bold;
+}
+
+.out-of-stock {
+  color: red;
+  font-weight: bold;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  border: 2px solid #555;
+}
+
+.dot.black {
+  background-color: black;
+}
+
+.dot.gray {
+  background-color: gray;
+}
+
+.add-to-cart {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: fit-content;
+}
+
+.add-to-cart:hover {
+  background-color: #e65a00;
+}
+
+.payment-methods {
+  background-color: #eef0f4;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.payment-methods p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.payment-icons img {
+  height: 24px;
+}
+
+/* Technical Section & Geometry */
+.tech-specs {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tech-specs h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-specs ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+  }
+
+  .main-image img {
+    max-width: 100%;
+  }
+}

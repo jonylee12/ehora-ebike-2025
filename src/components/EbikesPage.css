@@ -1,0 +1,99 @@
+.ebikes-page {
+  padding: 3rem 2rem;
+  background: #53dfae;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: #e0efef;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-wrapper {
+  position: relative;
+  padding: 1rem;
+}
+
+.product-image-wrapper img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #0fd7c3;
+  color: black;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.price-overlay {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  color: #053615;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: 0.9rem;
+  color: #c41616;
+}
+
+.add-to-cart {
+  display: block;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.product-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-info h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.product-info .rating {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.product-info .new {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.product-info .old {
+  text-decoration: line-through;
+  color: #a99c9c;
+  margin-left: 0.3rem;
+}

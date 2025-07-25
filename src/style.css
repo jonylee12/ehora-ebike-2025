@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.carousel {
+  z-index: 10;
+  position: relative;
+}
+
+.products-section {
+  background-image: url('/images/bg-products.png');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+

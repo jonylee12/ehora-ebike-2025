@@ -1,0 +1,40 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: #b8e1dc;
+  color: #100f0f;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.footer .copyright {
+  margin-bottom: 1rem;
+}
+
+.partners-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #0d0c0c;
+  font-style: italic;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.partners img {
+  height: 40px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s;
+}
+
+.partners img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}

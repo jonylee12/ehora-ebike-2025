@@ -1,0 +1,71 @@
+/* Header.css */
+.header {
+  background-color: #b3eaf1;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #2b2b2b;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+}
+
+.logo-text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-text {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #212b30; /* sky blue */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.logo-subtext {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #e1532f;
+  font-family: 'Georgia', serif;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  filter: invert(100%) grayscale(100%);
+  opacity: 0.8;
+  transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-icon:hover {
+  transform: scale(1.15);
+  filter: invert(85%) sepia(100%) saturate(500%) hue-rotate(30deg);
+  opacity: 1;
+}
