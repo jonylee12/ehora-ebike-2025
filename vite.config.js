@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
+  base: '/ehora-ebike-2025/', // ← numele exact al repository-ului tău
   plugins: [react()],
 })
